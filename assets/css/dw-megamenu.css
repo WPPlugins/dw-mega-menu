@@ -1,0 +1,205 @@
+.dw-sub-menu {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	background: #fff;
+}
+
+.dw-sub-menu > li {
+	min-width: 220px;
+}
+
+.dw-mega-menu {
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2;
+	position: absolute;
+	background: #fff;
+}
+
+.dw-mega-menu .dw-sub-menu {
+	position: static;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.dw-mega-menu-row {
+	display: table !important;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.dw-mega-menu-col {
+	display: table-cell !important;
+}
+
+li.dw-mega-menu-open > .dw-sub-menu,
+li.dw-mega-menu-open > .dw-mega-menu,
+li.dw-mega-menu-open > .dw-mega-menu .dw-sub-menu {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+}
+
+.dw-mega-menu-full-width {
+	position: static !important;
+}
+
+.dw-mega-menu-full-width .dw-mega-menu {
+	left: 0;
+	right: 0;
+}
+
+.dw-mega-menu-tabs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #eee;
+}
+
+.dw-mega-menu-tabs .dw-mega-menu-tab {
+	position: static !important;
+	width: 100%;
+}
+
+.dw-mega-menu-tabs .dw-mega-menu-tab > a {
+	width: 20%;
+	color: #333;
+}
+
+.dw-mega-menu-tabs .dw-mega-menu-tab .dw-mega-menu-tab-content {
+	position: absolute;
+	top: 0 !important;
+	left: 20% !important;
+	display: none;
+}
+
+.dw-mega-menu-tabs .dw-mega-menu-tab-open .dw-mega-menu-tab-content {
+	display: block;
+	width: 80%;
+	background: #fff;
+}
+
+.dw-mega-menu-tabs .dw-mega-menu-tab-content > .dw-sub-menu > li {
+	position: static;
+}
+
+
+/* slide transfrom */
+.dw-mega-menu-transition-slide > .dw-mega-menu-open > .dw-mega-menu,
+.dw-mega-menu-transition-slide > .dw-mega-menu-open > .dw-sub-menu {
+	visibility: visible;
+	opacity: 1;
+	-ms-transform: translate(0,0);
+	-webkit-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	transform: translate(0,0);
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.dw-mega-menu-transition-slide > li > .dw-mega-menu,
+.dw-mega-menu-transition-slide > li > .dw-sub-menu {
+	visibility: hidden;
+	opacity: 0;
+	-ms-transform: translate(0, 10%);
+	-webkit-transform: translate(0,10%);
+	-o-transform: translate(0,10%);
+	transform: translate(0, 10%);
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+
+/* elastic transform */
+.dw-mega-menu-transition-elastic > .dw-mega-menu-open > .dw-mega-menu,
+.dw-mega-menu-transition-elastic > .dw-mega-menu-open > .dw-sub-menu {
+	visibility: visible;
+	opacity: 1;
+	-ms-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-ms-transform: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.dw-mega-menu-transition-elastic > li > .dw-mega-menu,
+.dw-mega-menu-transition-elastic > li > .dw-sub-menu {
+	visibility: hidden;
+	opacity: 0;
+	-ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	-ms-transform: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+
+/* scale transform */
+.dw-mega-menu-transition-zoom > .dw-mega-menu-open > .dw-mega-menu,
+.dw-mega-menu-transition-zoom > .dw-mega-menu-open > .dw-sub-menu {
+	visibility: visible;
+	opacity: 1;
+	-ms-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	transform: scale(1,1);
+	-ms-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.dw-mega-menu-transition-zoom > li > .dw-mega-menu,
+.dw-mega-menu-transition-zoom > li > .dw-sub-menu {
+	visibility: hidden;
+	opacity: 0;
+	-ms-transform: scale(0.5,0.5);
+	-webkit-transform: scale(0.5,0.5);
+	-o-transform: scale(0.5,0.5);
+	transform: scale(0.5,0.5);
+	-ms-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+/* transition fading */
+.dw-mega-menu-transition-fading > .dw-mega-menu-open > .dw-mega-menu,
+.dw-mega-menu-transition-fading > .dw-mega-menu-open > .dw-sub-menu {
+	visibility: visible;
+	opacity: 1;
+	transition: all 1s;
+}
+
+.dw-mega-menu-transition-fading > li > .dw-mega-menu,
+.dw-mega-menu-transition-fading > li > .dw-sub-menu {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+
+/* transition default */
+.dw-mega-menu-transition-default > .dw-mega-menu-open > .dw-mega-menu,
+.dw-mega-menu-transition-default > .dw-mega-menu-open > .dw-sub-menu {
+	visibility: visible;
+	opacity: 1;
+}
+
+.dw-mega-menu-transition-default > li > .dw-mega-menu,
+.dw-mega-menu-transition-default > li > .dw-sub-menu {
+	visibility: hidden;
+	opacity: 0;
+}
